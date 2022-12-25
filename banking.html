@@ -17,7 +17,7 @@
             <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded ">
                     <h1 class="text-4xl">Deposite</h1>
-                    <h4 class="text-2xl">$00</h4>
+                    <h4 class="text-2xl">$<span id="old-deposit">00</span></h4>
                 </div>
                 <div class="bg-blue-400 p-8 rounded ">
                     <h1 class="text-4xl">Withdraw</h1>
@@ -25,13 +25,36 @@
                 </div>
                 <div class="bg-yellow-400 p-8 rounded ">
                     <h1 class="text-4xl">Balance</h1>
-                    <h4 class="text-2xl">$00</h4>
+                    <h4 class="text-2xl">$<span id="new-balance">1200</span></h4>
                 </div>
 
             </div>
         </section>
-    </main>
+        <!-- deposite & withdraw btn(ctrl+/ html comment) -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto pt-4">
+                <div class="text-4xl bg-blue-300">
+                    <h3> Please Deposite....</h3>
 
+                    <input id="input-deposit" type="text" class="border block border-gray-400"
+                        placeholder="Please enter your amount">
+                    <button id="button-deposit"
+                        class="bg-yellow-400 rounded px-10 py-2 ml-8 text-white mt-4">deposit</button>
+                </div>
+                <div class="text-4xl bg-blue-300">
+                    <h3> Withdraw....</h3>
+
+                    <input id="input-withdraw" type="text" class="border block border-gray-400"
+                        placeholder="Please enter your amount">
+                    <button id="button-withdraw"
+                        class="bg-yellow-400 rounded px-10 py-2 ml-8 text-white mt-4">Withdraw</button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="banking.js"></script>
 </body>
 
 </html>
